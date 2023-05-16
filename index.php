@@ -1,6 +1,7 @@
 <?php
 
 include __DIR__ . './db.php';
+// var_dump($Movies[0]->newThisYear)
 
 ?>
 
@@ -50,6 +51,7 @@ include __DIR__ . './db.php';
                     <p class="card-text">
                         <?= $Movies[0]->country ?>
                     </p>
+                    <div v-if='<?= $Movies[0]->newThisYear ?> '> <em>new this year</em></div>
                 </div>
             </div>
             <div class="card my_card bg-dark text-light">
@@ -64,9 +66,13 @@ include __DIR__ . './db.php';
                     <p class="card-text">
                         <?= $Movies[1]->description ?>
                     </p>
+
                     <p class="card-text">
                         <?= $Movies[1]->country ?>
                     </p>
+                    <div v-show="<?= $Movies[1]->newThisYear ?>">
+                        <em>new this year</em>
+                    </div>
                 </div>
             </div>
 
