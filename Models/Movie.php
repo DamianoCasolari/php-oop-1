@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . './genreClass.php';
+include __DIR__ . './Genre.php';
 
 
 class Movie
