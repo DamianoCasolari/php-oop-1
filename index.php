@@ -24,6 +24,7 @@ class Movie
     {
         $this->title = $title;
         $this->description = $description;
+        $this->checkyear($year);
         $this->year = $year;
         $this->genre = $genre;
 
@@ -38,7 +39,7 @@ class Movie
     }
 }
 
-$matrix = new Movie('matrix', 'ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati ex veniam reprehenderit consequatur cupiditate, harum corporis fugit ducimus cum.', 2000, new Genre('fantasy'));
+$matrix = new Movie('matrix', 'ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati ex veniam reprehenderit consequatur cupiditate, harum corporis fugit ducimus cum.', 2023, new Genre('fantasy'));
 
 var_dump($matrix)
 
