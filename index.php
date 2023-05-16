@@ -37,11 +37,36 @@ include __DIR__ . './db.php';
 
             <div class="card my_card bg-dark text-light">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    b5
+
+                    <h5 class="card-title">
+                        <?= $Movies[0]->title ?>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">
+                        <?= $Movies[0]->year ?>
+                    </h6>
+                    <p class="card-text">
+                        <?= $Movies[0]->description ?>
+                    </p>
+                    <p class="card-text">
+                        <?= $Movies[0]->country ?>
+                    </p>
+                </div>
+            </div>
+            <div class="card my_card bg-dark text-light">
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        <?= $Movies[1]->title ?>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">
+                        <?= $Movies[1]->year ?>
+                    </h6>
+                    <p class="card-text">
+                        <?= $Movies[1]->description ?>
+                    </p>
+                    <p class="card-text">
+                        <?= $Movies[1]->country ?>
+                    </p>
                 </div>
             </div>
 

@@ -10,6 +10,7 @@ class Movie
     public $year;
     public $newThisYear = false;
     public $genre;
+    public $country;
 
 
     public function __construct(string $title, string $description, int $year, Genre $genre, string $country = 'usa')
@@ -19,6 +20,7 @@ class Movie
         $this->checkyear($year);
         $this->year = $year;
         $this->genre = $genre;
+        $this->country = $country;
 
     }
 
