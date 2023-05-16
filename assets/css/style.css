@@ -1,0 +1,28 @@
+/*------ General selector-----  */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark);
+
+}
+
+/* ------Utility selector-----  */
+
+/* color zone  */
+:root {
+    --light: #ffffff;
+    --dark: #000000;
+}
+
+/* dimension zone  */
+
+/* Container zone  */
+
+.my_container {
+
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/pxfuel.jpg);
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+}
