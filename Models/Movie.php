@@ -9,17 +9,17 @@ class Movie
     public $description;
     public $year;
     public $newThisYear = false;
-    public $genre;
+    public $genres = [];
     public $country;
 
 
-    public function __construct(string $title, string $description, int $year, Genre $genre, string $country = 'usa')
+    public function __construct(string $title, string $description, int $year, Genre $genres, string $country = 'usa')
     {
         $this->title = $title;
         $this->description = $description;
         $this->checkyear($year);
         $this->year = $year;
-        $this->genre = $genre;
+        $this->genres = $genres;
         $this->country = $country;
 
     }

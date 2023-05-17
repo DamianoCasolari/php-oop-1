@@ -36,25 +36,27 @@ include __DIR__ . './db.php';
     <div class="my_container">
         <div id="app" class="d-flex flex-wrap">
 
-            <div class="card my_card bg-dark text-light">
-                <div class="card-body">
+            <?php foreach ($Movies as $movie): ?>
+                <div class="card my_card bg-dark text-light">
+                    <div class="card-body">
 
-                    <h5 class="card-title">
-                        <?= $Movies[0]->title ?>
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">
-                        <?= $Movies[0]->year ?>
-                    </h6>
-                    <p class="card-text">
-                        <?= $Movies[0]->description ?>
-                    </p>
-                    <p class="card-text">
-                        <?= $Movies[0]->country ?>
-                    </p>
-                    <div v-if='<?= $Movies[0]->newThisYear ?> '> <em>new this year</em></div>
+                        <h5 class="card-title">
+                            <?= $movie->title ?>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted ">
+                            <?= $movie->year ?>
+                        </h6>
+                        <p class="card-text">
+                            <?= $movie->description ?>
+                        </p>
+                        <p class="card-text">
+                            <?= $movie->country ?>
+                        </p>
+                        <div v-if='<?= $movie->newThisYear ?> '> <em>new this year</em></div>
+                    </div>
                 </div>
-            </div>
-            <div class="card my_card bg-dark text-light">
+            <?php endforeach ?>
+            <!-- <div class="card my_card bg-dark text-light">
                 <div class="card-body">
 
                     <h5 class="card-title">
@@ -70,11 +72,12 @@ include __DIR__ . './db.php';
                     <p class="card-text">
                         <?= $Movies[1]->country ?>
                     </p>
+            
                     <div v-show="<?= $Movies[1]->newThisYear ?>">
                         <em>new this year</em>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
