@@ -52,32 +52,10 @@ include __DIR__ . './db.php';
                         <p class="card-text">
                             <?= $movie->country ?>
                         </p>
-                        <div v-if='<?= $movie->newThisYear ?> '> <em>new this year</em></div>
+                        <div v-show='<?= $movie->newThisYear ?>'> <em>new this year</em></div>
                     </div>
                 </div>
             <?php endforeach ?>
-            <!-- <div class="card my_card bg-dark text-light">
-                <div class="card-body">
-
-                    <h5 class="card-title">
-                        <?= $Movies[1]->title ?>
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">
-                        <?= $Movies[1]->year ?>
-                    </h6>
-                    <p class="card-text">
-                        <?= $Movies[1]->description ?>
-                    </p>
-
-                    <p class="card-text">
-                        <?= $Movies[1]->country ?>
-                    </p>
-            
-                    <div v-show="<?= $Movies[1]->newThisYear ?>">
-                        <em>new this year</em>
-                    </div>
-                </div>
-            </div> -->
 
         </div>
     </div>
