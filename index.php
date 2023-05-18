@@ -1,7 +1,6 @@
 <?php
 
 include __DIR__ . './db.php';
-// var_dump($Movies[0]->newThisYear)
 
 ?>
 

@@ -9,7 +9,7 @@ class Movie
     public $description;
     public $year;
     public $newThisYear = false;
-    public $genres = [];
+    public $genres;
     public $country;
 
 
